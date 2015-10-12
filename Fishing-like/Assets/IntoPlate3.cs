@@ -1,14 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class IntoPlate2 : MonoBehaviour {
+public class IntoPlate3 : MonoBehaviour {
 	private Transform startPoint, endPoint;
 	private float percentage;
 	private float y;
 	
 	void Start (){
 		
-		startPoint = GameObject.Find ("potato").transform;
+		startPoint = GameObject.Find ("tomato").transform;
 		endPoint = GameObject.Find("plate").transform;
 		
 		y = startPoint.position.y;
@@ -18,13 +18,14 @@ public class IntoPlate2 : MonoBehaviour {
 	
 	void Update(){
 		if (y >= 1f) {
-
+			
 			transform.position = Vector3.Lerp (startPoint.position, endPoint.position, percentage);
-
+			
 		}
-
+		
 		if (percentage >= 1) {
 			percentage = 0;
+			
 		}
 		
 	}

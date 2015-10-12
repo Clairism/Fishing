@@ -1,14 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Grab1 : MonoBehaviour {
-	//Transform GrabPosition;
+public class Grab3 : MonoBehaviour {
+
 	private bool entered;
-	
-	void Start(){
-		//GrabPosition = GameObject.Find ("Grab").transform;
-	}
-	
+
 	void OnTriggerEnter(Collider other){
 		entered = true;
 	}
@@ -19,11 +15,10 @@ public class Grab1 : MonoBehaviour {
 	void Update () {
 		
 		if ( entered == true && Input.GetKey (KeyCode.G)) {
-			Destroy (gameObject.GetComponent<lerping1> ());
-					
+			Destroy (gameObject.GetComponent<lerping3> ());
+	
 		}
 		
 		
 	}
-
 }

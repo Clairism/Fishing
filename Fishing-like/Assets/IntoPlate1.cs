@@ -10,7 +10,7 @@ public class IntoPlate1 : MonoBehaviour {
 	void Start (){
 		
 		startPoint = GameObject.Find ("green onion").transform;
-		endPoint = GameObject.Find("green onion plate").transform;
+		endPoint = GameObject.Find("plate").transform;
 		
 		y = startPoint.position.y;
 		percentage = 0.1f;
@@ -26,6 +26,7 @@ public class IntoPlate1 : MonoBehaviour {
 		
 		if (percentage >= 1) {
 			percentage = 0;
+
 		}
 		
 	}
