@@ -8,7 +8,7 @@ public class pointer : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
-		objectPosition = GameObject.Find ("Spoon").transform;
+		objectPosition = GameObject.Find ("Grab").transform;
 		
 	}
 	
